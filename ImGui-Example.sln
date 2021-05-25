@@ -3,18 +3,68 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImGui-Example", "ImGui-Example\ImGui-Example.vcxproj", "{B212DDA4-2A8E-45B2-914D-7BEEB31D06B1}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImGui-Example_plugin-sdk", "src\plugin-sdk\ImGui-Example_plugin-sdk.vcxproj", "{B212DDA4-2A8E-45B2-914D-7BEEB31D06B1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImGui-Example_d3dhook", "src\win32_console_application\ImGui-Example_d3dhook.vcxproj", "{412AB251-1021-4FBE-B290-6FD81B34A82F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImGui-Example_SF_R1", "src\sampfuncs\r1\ImGui-Example_SF_R1.vcxproj", "{AC0C243A-FAEA-4062-9682-3FC9E0B4D835}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		GTASA Release|x64 = GTASA Release|x64
 		GTASA Release|x86 = GTASA Release|x86
+		GTASA zDebug|x64 = GTASA zDebug|x64
 		GTASA zDebug|x86 = GTASA zDebug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B212DDA4-2A8E-45B2-914D-7BEEB31D06B1}.Debug|x64.ActiveCfg = GTASA zDebug|Win32
+		{B212DDA4-2A8E-45B2-914D-7BEEB31D06B1}.Debug|x64.Build.0 = GTASA zDebug|Win32
+		{B212DDA4-2A8E-45B2-914D-7BEEB31D06B1}.Debug|x86.ActiveCfg = GTASA zDebug|Win32
+		{B212DDA4-2A8E-45B2-914D-7BEEB31D06B1}.Debug|x86.Build.0 = GTASA zDebug|Win32
+		{B212DDA4-2A8E-45B2-914D-7BEEB31D06B1}.GTASA Release|x64.ActiveCfg = GTASA Release|Win32
 		{B212DDA4-2A8E-45B2-914D-7BEEB31D06B1}.GTASA Release|x86.ActiveCfg = GTASA Release|Win32
 		{B212DDA4-2A8E-45B2-914D-7BEEB31D06B1}.GTASA Release|x86.Build.0 = GTASA Release|Win32
+		{B212DDA4-2A8E-45B2-914D-7BEEB31D06B1}.GTASA zDebug|x64.ActiveCfg = GTASA zDebug|Win32
 		{B212DDA4-2A8E-45B2-914D-7BEEB31D06B1}.GTASA zDebug|x86.ActiveCfg = GTASA zDebug|Win32
 		{B212DDA4-2A8E-45B2-914D-7BEEB31D06B1}.GTASA zDebug|x86.Build.0 = GTASA zDebug|Win32
+		{B212DDA4-2A8E-45B2-914D-7BEEB31D06B1}.Release|x64.ActiveCfg = GTASA zDebug|Win32
+		{B212DDA4-2A8E-45B2-914D-7BEEB31D06B1}.Release|x64.Build.0 = GTASA zDebug|Win32
+		{B212DDA4-2A8E-45B2-914D-7BEEB31D06B1}.Release|x86.ActiveCfg = GTASA Release|Win32
+		{B212DDA4-2A8E-45B2-914D-7BEEB31D06B1}.Release|x86.Build.0 = GTASA Release|Win32
+		{412AB251-1021-4FBE-B290-6FD81B34A82F}.Debug|x64.ActiveCfg = Debug|x64
+		{412AB251-1021-4FBE-B290-6FD81B34A82F}.Debug|x64.Build.0 = Debug|x64
+		{412AB251-1021-4FBE-B290-6FD81B34A82F}.Debug|x86.ActiveCfg = Debug|Win32
+		{412AB251-1021-4FBE-B290-6FD81B34A82F}.Debug|x86.Build.0 = Debug|Win32
+		{412AB251-1021-4FBE-B290-6FD81B34A82F}.GTASA Release|x64.ActiveCfg = Release|x64
+		{412AB251-1021-4FBE-B290-6FD81B34A82F}.GTASA Release|x64.Build.0 = Release|x64
+		{412AB251-1021-4FBE-B290-6FD81B34A82F}.GTASA Release|x86.ActiveCfg = Release|Win32
+		{412AB251-1021-4FBE-B290-6FD81B34A82F}.GTASA Release|x86.Build.0 = Release|Win32
+		{412AB251-1021-4FBE-B290-6FD81B34A82F}.GTASA zDebug|x64.ActiveCfg = Debug|x64
+		{412AB251-1021-4FBE-B290-6FD81B34A82F}.GTASA zDebug|x64.Build.0 = Debug|x64
+		{412AB251-1021-4FBE-B290-6FD81B34A82F}.GTASA zDebug|x86.ActiveCfg = Debug|Win32
+		{412AB251-1021-4FBE-B290-6FD81B34A82F}.GTASA zDebug|x86.Build.0 = Debug|Win32
+		{412AB251-1021-4FBE-B290-6FD81B34A82F}.Release|x64.ActiveCfg = Release|x64
+		{412AB251-1021-4FBE-B290-6FD81B34A82F}.Release|x64.Build.0 = Release|x64
+		{412AB251-1021-4FBE-B290-6FD81B34A82F}.Release|x86.ActiveCfg = Release|Win32
+		{412AB251-1021-4FBE-B290-6FD81B34A82F}.Release|x86.Build.0 = Release|Win32
+		{AC0C243A-FAEA-4062-9682-3FC9E0B4D835}.Debug|x64.ActiveCfg = Debug|Win32
+		{AC0C243A-FAEA-4062-9682-3FC9E0B4D835}.Debug|x86.ActiveCfg = Debug|Win32
+		{AC0C243A-FAEA-4062-9682-3FC9E0B4D835}.Debug|x86.Build.0 = Debug|Win32
+		{AC0C243A-FAEA-4062-9682-3FC9E0B4D835}.GTASA Release|x64.ActiveCfg = Release|Win32
+		{AC0C243A-FAEA-4062-9682-3FC9E0B4D835}.GTASA Release|x64.Build.0 = Release|Win32
+		{AC0C243A-FAEA-4062-9682-3FC9E0B4D835}.GTASA Release|x86.ActiveCfg = Release|Win32
+		{AC0C243A-FAEA-4062-9682-3FC9E0B4D835}.GTASA Release|x86.Build.0 = Release|Win32
+		{AC0C243A-FAEA-4062-9682-3FC9E0B4D835}.GTASA zDebug|x64.ActiveCfg = Release|Win32
+		{AC0C243A-FAEA-4062-9682-3FC9E0B4D835}.GTASA zDebug|x64.Build.0 = Release|Win32
+		{AC0C243A-FAEA-4062-9682-3FC9E0B4D835}.GTASA zDebug|x86.ActiveCfg = Debug|Win32
+		{AC0C243A-FAEA-4062-9682-3FC9E0B4D835}.GTASA zDebug|x86.Build.0 = Debug|Win32
+		{AC0C243A-FAEA-4062-9682-3FC9E0B4D835}.Release|x64.ActiveCfg = Release|Win32
+		{AC0C243A-FAEA-4062-9682-3FC9E0B4D835}.Release|x86.ActiveCfg = Release|Win32
+		{AC0C243A-FAEA-4062-9682-3FC9E0B4D835}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
